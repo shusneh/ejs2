@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212125;color: antiquewhite;">
+    <div id="images" >
+      
+            <li> <img id="moun" height="200px" src="https://images.pexels.com/photos/18148936/pexels-photo-18148936.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"  alt="">
+            </li>
+            <li> <img id="mountains" height="200px" src="https://images.pexels.com/photos/18148936/pexels-photo-18148936.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"  alt="">
+            </li>
+            <li>dj</li>
+    </div>
+</body>
+<script>
+    document.querySelector('#images').addEventListener('click',function(e){
+    //   const remove=e.target
+    //    // remove.remove();
+    //    if (remove.tagName=='IMG') {
+    //     remove.parentNode.remove();
+    //    }
+   
+    console.log('div is printed');
+     e.stopPropagation();
+    
+        //remove.parentNode.removeChild(remove)
+    } ,true)
+
+    document.querySelector('#moun').addEventListener('click',function(e){
+    //   const remove=e.target
+    //    // remove.remove();
+    //    if (remove.tagName=='IMG') {
+    //     remove.parentNode.remove();
+    //    }
+    console.log('moun is printed');
+   
+        //remove.parentNode.removeChild(remove)
+    })
+</script>
+</html>
